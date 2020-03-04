@@ -1,6 +1,6 @@
 # Dirichlet-Smoothed Word Embeddings (for Low-Resource Settings)
 
-Calculating word embeddings from a corpus using ppmi-weighted and dirichlet-smoothed co-occurrence matrices factorized by SVD.
+Calculating word embeddings from a corpus by SVD-factorized co-occurrence matrices with dirichlet-smoothed ppmi weighting.
 
 ## Abstract
 
@@ -33,7 +33,7 @@ Note that this will need around 2.4 GB of disk space for the corpus and the word
 To compute word embeddings from any corpus, run
 
 ```
-$ python3 svd_ppmi_lambda_vectors.py corpus_file word_vector_filename
+$ python3 compute_svd_ppmi_lambda_vectors.py corpus_file word_vector_filename
 ```
 
 The input corpus_file has to be a file with one word per line.
@@ -41,7 +41,7 @@ The input corpus_file has to be a file with one word per line.
 For an overview of hyperparameters, call
 
 ```
-$ python3 svd_ppmi_lambda_vectors.py -h
+$ python3 compute_svd_ppmi_lambda_vectors.py -h
 ```
 
 For an evaluation of word embeddings (in word2vec text format) on the word similarity task, switch to the evaluation directory and run
@@ -57,3 +57,7 @@ where dataset1, dataset2, ... are word similarity datasets with three tab separa
 Classical word similarity datasets for English can be found in /evaluation/datasets.
 
 Datasets for the evaluation of Luxembourgish and Maltese word embeddings (as used in the paper) which were translated from English by the Google Translation API, can be found in /evaluation/translated_datasets.
+
+## Acknowledgments
+
+Thanks to Matt Mahoney for providing the enwik9 corpus and the Perl script "wikifil.pl" for preprocessing used in the demo script and to Omer Levy for parts of the code for computing the PPMI weights.
