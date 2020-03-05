@@ -54,7 +54,7 @@ where dataset1, dataset2, ... are word similarity datasets with three tab separa
 
 ## Word Similarity Datasets
 
-Classical word similarity datasets for English can be found in /evaluation/datasets.
+Usual word similarity datasets for English can be found in /evaluation/datasets.
 
 Datasets for the evaluation of Luxembourgish and Maltese word embeddings (as used in the paper) which were translated from English by the Google Translation API, can be found in /evaluation/translated_datasets.
 
