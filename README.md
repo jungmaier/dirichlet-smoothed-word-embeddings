@@ -1,6 +1,6 @@
 # Dirichlet-Smoothed Word Embeddings (for Low-Resource Settings)
 
-Calculating word embeddings from a corpus by SVD-factorized co-occurrence matrices with dirichlet-smoothed ppmi weighting.
+Calculating word embeddings from a corpus by SVD-factorized co-occurrence matrices with dirichlet-smoothed PPMI weighting.
 
 ## Abstract
 
