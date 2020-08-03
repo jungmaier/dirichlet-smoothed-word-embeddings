@@ -2,6 +2,8 @@
 
 Calculating word embeddings from a corpus by SVD-factorized co-occurrence matrices with dirichlet-smoothed PPMI weighting.
 
+For details, please refer to [this paper](https://www.aclweb.org/anthology/2020.lrec-1.437.pdf).
+
 ## Abstract
 
 Nowadays, classical count-based word embeddings using positive pointwise mutual information (PPMI) weighted co occurrence matrices have been widely superseded by machine-learning-based methods like word2vec and GloVe. But these methods are usually applied using very large amounts of text data. In many cases, however, there is not much text data available, for example for specificdomains or low-resource languages. This paper revisits PPMI by adding Dirichlet smoothing to correct its bias towards rare words. We evaluate on standard word similarity data sets and compare to word2vec and the recent state of the art for low-resource settings: Positive and Unlabeled (PU) Learning for word embeddings. The proposed method outperforms PU-Learning for low-resource settings and obtains competitive results for Maltese and Luxembourgish.
@@ -57,6 +59,26 @@ where dataset1, dataset2, ... are word similarity datasets with three tab separa
 Usual word similarity datasets for English can be found in /evaluation/datasets.
 
 Datasets for the evaluation of Luxembourgish and Maltese word embeddings (as used in the paper) which were translated from English by the Google Translation API, can be found in /evaluation/translated_datasets.
+
+## Reference
+
+Pleace cite:
+
+```
+@inproceedings{jungmaier-etal-2020-dirichlet,
+    title = "{D}irichlet-Smoothed Word Embeddings for Low-Resource Settings",
+    author = "Jungmaier, Jakob  and
+      Kassner, Nora  and
+      Roth, Benjamin",
+    booktitle = "Proceedings of The 12th Language Resources and Evaluation Conference",
+    month = may,
+    year = "2020",
+    address = "Marseille, France",
+    publisher = "European Language Resources Association",
+    url = "https://www.aclweb.org/anthology/2020.lrec-1.437",
+    pages = "3560--3565",
+}
+```
 
 ## Acknowledgments
 
