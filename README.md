@@ -83,3 +83,7 @@ Pleace cite:
 ## Acknowledgments
 
 Thanks to Matt Mahoney for providing the enwik9 corpus and the Perl script "wikifil.pl" for preprocessing used in the demo script and to Omer Levy for parts of the code for computing the PPMI weights.
+
+## License
+
+This project is licensed under the terms of the GNU General Public License 3.
